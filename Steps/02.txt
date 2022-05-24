@@ -7,4 +7,10 @@
       - name: Run automated tests
         run: dotnet test -c Release --no-build
 
-        
+
+CREATE a status badge file
+(demo #2.1 -> fail)
+(demo #2.2 -> pass)
+
+
+GITHUB ISSUE
