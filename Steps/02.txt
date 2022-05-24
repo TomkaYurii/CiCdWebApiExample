@@ -13,4 +13,11 @@ CREATE a status badge file
 (demo #2.2 -> pass)
 
 
-GITHUB ISSUE
+GITHUB ISSUE -> connect to demo #2.2
+
+AZURE -> Create Linux App Service
+
+Setup Secrete (Github - > Settings of project)
+
+
+https://github.com/marketplace/actions/azure-webapp
