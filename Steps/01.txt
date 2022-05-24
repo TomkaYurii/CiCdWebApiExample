@@ -1,0 +1,5 @@
+git clone https://github.com/TomkaYurii/CiCdExample.git
+cd CiCdExample
+
+https://www.toptal.com/developers/gitignore/
+gitignore plugin
