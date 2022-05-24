@@ -3,3 +3,43 @@ cd CiCdExample
 
 https://www.toptal.com/developers/gitignore/
 gitignore plugin
+github actions plugin 
+
+.github/workflows/ci-cd.yaml
+
+=============================================================
+=== Demonstration 01 ========================================
+=============================================================
+name: Continuous Integration and Deployment
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code 
+        uses: actions/checkout@v3
+        
+      - name: Setup .NET 6
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: "6.0.x"
+      
+      - name: Restore dependencies
+        run: dotnet restore
+      
+      - name: Build app
+        run: dotnet build -c Release --no-restore
+
+https://github.com/marketplace?type=actions
+https://github.com/marketplace/actions/checkout
+https://github.com/marketplace/actions/setup-net-core-sdk
+
+
+dotnet restore
+dotnet build -c Release --no-restore
+dotnet test
